@@ -20,6 +20,9 @@ LED1 is connected to pin 6.
 LED2 is connected to pin 4.
 LED3 is connected to pin 2.
 
+
+<img width="941" height="747" alt="image" src="https://github.com/user-attachments/assets/c22aa161-010c-4ebb-930e-d865849bd4e9" />
+
 Connect the long leg (anode) of each LED to the assigned Arduino pin through a resistor, and the short leg (cathode) to GND.
 
 ## How to Run
