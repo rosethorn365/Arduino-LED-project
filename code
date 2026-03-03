@@ -1,0 +1,43 @@
+
+// Numeroidaan LEDit ja annetaan jokaiselle oma pinni
+int led1 = 6;
+int led2 = 4;
+int led3 = 2;
+
+void setup() {
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+
+  // käynnistää tietokoneen ja Arduinon välisen tekstiviestinnän 9600 nopeudella
+  Serial.begin(9600);
+}
+
+// Looppi
+
+void loop() {
+
+  // Nämä komennot sytyttävät kaikki kolme LEDiä yhtä aikaa
+  digitalWrite(led1, HIGH);
+  digitalWrite(led2, HIGH);
+  digitalWrite(led3, HIGH);
+
+  // Tulostetaan sarjaporttiin parametrin teksti
+  Serial.println("LED ON");
+
+  // Odotetaan 2 sekuntia (2000ms)
+  delay(2000);
+
+  // Nämä komennot sammuttavat kaikki kolme LEDiä yhtä aikaa
+  digitalWrite(led1, LOW);
+  digitalWrite(led2, LOW);
+  digitalWrite(led3, LOW);
+
+  // Tulostetaan sarjaporttiin parametrin teksti
+  Serial.println("LED OFF");
+
+  // Odotetaan 2 sekuntia
+  delay(2000);
+  
+  // Aloitetaan looppi alusta
+}
